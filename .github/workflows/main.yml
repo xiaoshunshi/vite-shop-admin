@@ -1,4 +1,4 @@
-name: A TO A:GH_PAGES
+name: shop action
 on: # 监听 master 分支上的 push 事件
   push:
     branches:
@@ -33,7 +33,7 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
-        PRESONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./dist
         
